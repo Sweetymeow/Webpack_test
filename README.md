@@ -59,3 +59,9 @@ Good loaders for requiring your assets are the [file-loader](https://webpack.js.
 ```// install
 $ npm install sass-loader node-sass --save-dev
 ```
+
+### Loading image
+```
+$ npm install url-loader file-loader --save-dev
+```
+load image to reduce the HTTPRequest to make

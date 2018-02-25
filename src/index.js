@@ -5,20 +5,21 @@ import './style2.scss';
 
 const MyComp = (props) => <h1>Hello, {props.title}!</h1>;
 
-class Message extends React.Component {
+class Image extends React.Component {
   render () {
     return (
       <div>
         <MyComp title={this.props.myName} />
-        <p>{this.props.message}</p>
+        <p>{this.props.caption}</p>
+        <div id="image"></div>
       </div>
     )
   }
 }
 
-export default Message;
+export default Image;
 
-ReactDOM.render(<Message myName="Email Wendy" message="Can you send me a email?" />,
+ReactDOM.render(<Image myName="Katie" caption="How cute i am?" />,
   document.getElementById('react-container'));
 
 // const arr = ['JavaScript', 'Node', 'webpack', 'React', 'Angular', 'Emmet'];
