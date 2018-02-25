@@ -10,8 +10,6 @@ $ npm run build
 $ npm run watch
 ```
 
-# Webpack3 note
-
 ## Webpack loaders
 - [Loaders - 所有loader的详细用法](https://webpack.js.org/loaders/)
 
@@ -55,13 +53,17 @@ Adds CSS to the DOM by injecting a <style> tag
 The css-loader interprets `@import` and `url()` like import/require() and will resolve them.
 Good loaders for requiring your assets are the [file-loader](https://webpack.js.org/loaders/file-loader/) and the [url-loader](https://webpack.js.org/loaders/url-loader/) which you should specify in your config (see below).
 
-### Load SCSS
+### Chapter 3.2 Load SCSS
 ```// install
 $ npm install sass-loader node-sass --save-dev
 ```
 
-### Loading image
+### Chapter 3.3 Loading image
 ```
 $ npm install url-loader file-loader --save-dev
 ```
 load image to reduce the HTTPRequest to make
+
+### Chapter 3.4 Webpack server
+Use [webpack](https://webpack.js.org/) with a development server that provides live reloading. This should be used for development only.
+[Github / webpack-dev-server](https://github.com/webpack/webpack-dev-server)

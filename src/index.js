@@ -6,10 +6,17 @@ import './style2.scss';
 const MyComp = (props) => <h1>Hello, {props.title}!</h1>;
 
 class Image extends React.Component {
+  constructor(){
+    super();
+    this.state ={
+      title: "Granite Peaks"
+    }
+  }
   render () {
     return (
       <div>
         <MyComp title={this.props.myName} />
+        <h4>{this.state.title}</h4>
         <p>{this.props.caption}</p>
         <div id="image"></div>
       </div>
