@@ -9,7 +9,7 @@ class Image extends React.Component {
   constructor(){
     super();
     this.state ={
-      title: "Granite Peaks"
+      title: "NEW Peaks"
     }
   }
   render () {

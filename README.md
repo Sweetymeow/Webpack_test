@@ -67,3 +67,23 @@ load image to reduce the HTTPRequest to make
 ### Chapter 3.4 Webpack server
 Use [webpack](https://webpack.js.org/) with a development server that provides live reloading. This should be used for development only.
 [Github / webpack-dev-server](https://github.com/webpack/webpack-dev-server)
+```
+$ npm install webpack-dev-server webpack-cli -D
+```
+在webpack.config.js之中加入：
+```JavaScript
+module.exports = {
+  // ...
+  devServer: {
+    contentBase: path.join(__dirname, 'dist'),
+    port:8082
+  }
+  // ...
+}
+```
+
+- Usage:
+```// package.json
+"dev": "webpack-dev-server"
+```
+使用 `$ npm run dev`来启动server，可以追踪文件的变化，并实时更新
