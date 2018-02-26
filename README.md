@@ -64,7 +64,7 @@ $ npm install url-loader file-loader --save-dev
 ```
 load image to reduce the HTTPRequest to make
 
-### Chapter 3.4 Webpack server
+### Chapter 3.4 Webpack server -> provides live reloading
 Use [webpack](https://webpack.js.org/) with a development server that provides live reloading. This should be used for development only.
 [Github / webpack-dev-server](https://github.com/webpack/webpack-dev-server)
 ```
@@ -81,9 +81,9 @@ module.exports = {
   // ...
 }
 ```
-
-- Usage:
-```// package.json
-"dev": "webpack-dev-server"
+使用方法 / Usage:
+```JavaScript
+// package.json
+  "dev": "webpack-dev-server"
 ```
 使用 `$ npm run dev`来启动server，可以追踪文件的变化，并实时更新
